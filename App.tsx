@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import InputSearch from './src/InputSearch';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,6 +27,7 @@ export default function App() {
           <Text style={styles.headerText}>fruits & vegetables</Text>
           <Text>Icon</Text>
       </View>
+      <InputSearch />
     </View>
   );
 }
