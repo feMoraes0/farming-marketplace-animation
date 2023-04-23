@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Feather from '@expo/vector-icons/Feather';
 import InputSearch from './src/InputSearch';
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.header}>
           <Text style={styles.headerText}>fruits & vegetables</Text>
-          <Text>Icon</Text>
+          <Feather name='shopping-cart' size={24.0} />
       </View>
       <InputSearch />
     </View>
